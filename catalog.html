@@ -18,10 +18,12 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link current" href="#">Гостиницы</a>
+          <a class="navigation-link current" href="catalog.html" aria-current="page">Гостиницы</a>
         </li>
       </ul>
-      <img class="logo" src="" alt="Логотип Седона">
+      <a class="logo-wrapper" href="index.html" aria-current="page">
+        <img class="logo" src="" alt="Логотип Седона">
+      </a>
       <ul class="navigation-list user-navigation">
         <li class="navigation-item">
           <button class="navigation-search" type="button">
@@ -31,7 +33,7 @@
         </li>
         <li class="navigation-item favourite">
           <button class="favourite-button" type="button">
-            <span class="visually-hidden">Избранное</span>
+            <span class="visually-hidden">Товаров в избранном:</span>
           </button>
           <span class="favourite-qty">12</span>
         </li>
@@ -42,7 +44,7 @@
     </nav>
   </header>
 
-  <main class="inner-page">
+  <main class="main-page">
     <section class="filters">
       <h1 class="inner-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs-lest">
@@ -142,7 +144,7 @@
           <img class="hotels-image" src="" alt="">
         </a>
         <div class="hotels-info-wrapper">
-          <a href="">
+          <a href="#">
             <h3 class="hotels-title">Amara Resort & Spa</h3>
           </a>
           <div class="hotels-info">
@@ -155,12 +157,9 @@
           </div>
         </div>
         <div class="hotels-rating">
-          <ul class="rating-list">
-            <li class="rating-item"></li>
-            <li class="rating-item"></li>
-            <li class="rating-item"></li>
-            <li class="rating-item"></li>
-          </ul>
+          <div class="rating-stars">
+            <span class="visually-hidden">Рейтинг 4 звезды</span>
+          </div>
           <span class="rating-qty button">Рейтинг: 8,5</span>
         </div>
       </li>
@@ -169,7 +168,7 @@
           <img class="hotels-image" src="" alt="">
         </a>
         <div class="hotels-info-wrapper">
-          <a href="">
+          <a href="#">
             <h3 class="hotels-title">Desert Quail Inn</h3>
           </a>
           <div class="hotels-info">
@@ -182,11 +181,9 @@
           </div>
         </div>
         <div class="hotels-rating">
-          <ul class="rating-list">
-            <li class="rating-item"></li>
-            <li class="rating-item"></li>
-            <li class="rating-item"></li>
-          </ul>
+          <div class="rating-stars">
+            <span class="visually-hidden">Рейтинг 3 звезды</span>
+          </div>
           <span class="rating-qty button">Рейтинг: 8,9</span>
         </div>
       </li>
@@ -195,7 +192,7 @@
           <img class="hotels-image" src="" alt="">
         </a>
         <div class="hotels-info-wrapper">
-          <a href="">
+          <a href="№">
             <h3 class="hotels-title">Villas at Poco Diablo</h3>
           </a>
           <div class="hotels-info">
@@ -208,10 +205,9 @@
           </div>
         </div>
         <div class="hotels-rating">
-          <ul class="rating-list">
-            <li class="rating-item"></li>
-            <li class="rating-item"></li>
-          </ul>
+          <div class="rating-stars">
+            <span class="visually-hidden">Рейтинг 2 звезды</span>
+          </div>
           <span class="rating-qty button">Рейтинг: 9,2</span>
         </div>
       </li>
@@ -220,7 +216,7 @@
           <img class="hotels-image" src="" alt="">
         </a>
         <div class="hotels-info-wrapper">
-          <a href="">
+          <a href="№">
             <h3 class="hotels-title">GreenTree Inn</h3>
           </a>
           <div class="hotels-info">
@@ -233,10 +229,9 @@
           </div>
         </div>
         <div class="hotels-rating">
-          <ul class="rating-list">
-            <li class="rating-item"></li>
-            <li class="rating-item"></li>
-          </ul>
+          <div class="rating-stars">
+            <span class="visually-hidden">Рейтинг 2 звезды</span>
+          </div>
           <span class="rating-qty button">Рейтинг: 9,2</span>
         </div>
       </li>
@@ -270,15 +265,15 @@
         <option value="50">50</option>
       </select>
     </div>
-    <section class="newsletter">
-      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-      <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+    <section class="subscribe">
+      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
         <label>
           <span class="visually-hidden">Введите email</span>
         </label>
-        <input class="newsletter-input" type="text" name="newsletter-email" placeholder="Ваш e-mail">
-        <button class="newsletter-button button" type="submit">Подписаться</button>
+        <input class="subscribe-input" type="text" name="subscribe-email" placeholder="Ваш e-mail">
+        <button class="subscribe-button button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
